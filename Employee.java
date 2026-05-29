@@ -3,31 +3,34 @@ class Employee
 	public static void main(String[] args)
 	{
 		Name obj=new Name();
-		obj.salary();
-		obj.role();
-		obj.name();
+		
+		obj.salary(75000.78);
+		obj.role("manager");
+		obj.name("harshitha");
 	}
 }
 class Salary
 {
-	void salary()
+	double sal;
+	void salary(double sal)
 	{
-		System.out.println(" 1-lakh ruupees ");
+		System.out.println(" salary: "+sal);
 	}
 }
 class Roles extends Salary
 {
-	void role()
+	String role;
+	void role(String role)
 	{
-		System.out.println("Manager ");
+		System.out.println(" Role :  "+role);
 	}
 }
 class Name extends Roles
 {
-	void name()
+	String str;
+	void name(String str)
 	{
-		System.out.println(" Harshitha ");
+		System.out.println(" name : "+str);
 	}
-	
 }
 	
